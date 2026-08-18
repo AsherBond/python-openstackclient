@@ -13,6 +13,19 @@ compute and network services.
    :command: availability zone list
 
 
+cloud cache
+-----------
+
+Authentication is cached in the keyring between invocations when the
+``cache.auth`` setting is enabled in ``clouds.yaml``. This deletes what is
+cached for a cloud, so that the next command authenticates again. For a plugin
+that authenticates in a browser, such as ``v3websso``, that means logging in
+again.
+
+.. autoprogram-cliff:: openstack.common
+   :command: cloud cache delete
+
+
 command
 -------
 
