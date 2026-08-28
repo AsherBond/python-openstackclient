@@ -47,6 +47,7 @@ volume = "openstackclient.volume.client"
 
 [project.entry-points."openstack.common"]
 availability_zone_list = "openstackclient.common.availability_zone:ListAvailabilityZone"
+cloud_cache_delete = "openstackclient.common.cloud:DeleteCloudCache"
 configuration_show = "openstackclient.common.configuration:ShowConfiguration"
 extension_list = "openstackclient.common.extension:ListExtension"
 extension_show = "openstackclient.common.extension:ShowExtension"
